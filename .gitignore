@@ -1,0 +1,8 @@
+.jekyll-cache/
+.vscode/
+# node_modules/
+nbproject/
+yarn.lock
+# public/
+.idea/
+_site/

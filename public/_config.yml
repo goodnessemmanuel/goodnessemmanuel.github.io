@@ -1,6 +1,6 @@
-domain: goodnessemmanuel.github.io
+domain: goodnessemmanuel.github.io/public
 url: https://goodnessemmanuel.github.io # the base hostname & protocol for your site, e.g. http://hexad.de
-baseurl: /public/ # the subpath of your site, e.g. /blog
+baseurl: goodnessemmanuel.github.io/public # the subpath of your site, e.g. /blog
 title: "" # the name of your site, e.g. ACME Corp.
 
 kramdown:
@@ -19,4 +19,5 @@ collections:
   socialcommitments:
     output: false
 
-exclude: [nbproject, yarn.lock, package.json, package-lock.json, gitlab-ci.yml, public]
+exclude:
+  [nbproject, yarn.lock, package.json, package-lock.json, gitlab-ci.yml, public]

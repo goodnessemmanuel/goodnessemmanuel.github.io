@@ -1,0 +1,31 @@
+---
+layout: inner
+title: "Our Fields of Expertise"
+lang-key: de-DE
+lang: de
+permalink: de/expertise
+---
+{% assign t = site.data.translations[page.lang]["section-fields-of-expertise"] %}
+<section class="bg-white" id="our-services">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-10 mx-auto text-center">
+        <h1>{{ t.title }}</h1>
+        <p class="lead py-4">
+          {{ t.description }}
+        </p>
+        <a href="{{t.learn-more-url | prepend: site.baseurl}}" class="round-btn orange">{{t.learn-more}}</a>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 mt-5">
+        <div class="row mx-auto">
+          {% assign ordered_expertise = site.expertisecontent | where: "lang", page.lang %}
+          {% for expertise in ordered_expertise %}
+          {{expertise.title}}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

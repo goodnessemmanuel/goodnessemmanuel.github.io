@@ -1,0 +1,74 @@
+#who-we-are {
+    & h1 {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 500;
+    }
+    .who-we-are-item--content{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        column-gap: 3rem;
+        padding-top: 6rem;
+
+        @include devices(medium_screen){
+            grid-template-columns: auto;
+            .who-we-are-item--image{
+                margin-bottom: 2rem;
+            }
+        }
+        .who-we-are-item--details{
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+            height: 100%;
+            align-items: stretch;
+            overflow-x: hidden !important;
+            & .who-we-are-item {
+                background-image: url('../../assets/images/who-we-are-bullet-point-icon.png');
+                background-position: left top;
+                background-repeat: no-repeat;
+                padding-left: 75px;
+                flex: 1;
+            }
+        }
+    }
+    & h3{
+        @include font-h4;
+    }
+    & p{
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: normal;
+    }
+    & ul {
+        margin-top:96px;
+        list-style: none;
+        display: grid;
+        gap: 2.5rem;
+        grid-template-columns: repeat(4, 1fr);
+        @include devices(medium_screen){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include devices(tablet){
+            grid-template-columns: auto;
+        }
+        & li {
+            &::before {
+                font-size: 30px;
+                content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                color: $primary-orange; /* Change the color */
+                font-weight: bold; /* If you want it to be bold */
+                display: inline-block; /* Needed to add space between the bullet and the text */
+                width: 1.5em; /* Also needed for space (tweak if needed) */
+                
+            }
+            color: #393939;
+            font-size: 20px;
+            line-height: 32px;
+            white-space: nowrap;
+        }
+    }
+}

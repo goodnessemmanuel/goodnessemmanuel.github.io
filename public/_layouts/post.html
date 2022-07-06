@@ -1,0 +1,12 @@
+---
+layout: inner-breadcrumb
+addCustomJs: false
+navbarClasses: 'navbar-inner'
+---
+
+            <img src="{{page.image | prepend: site.baseurl}}" class="img-fluid rounded pt-2 pb-5"
+                 alt="{{page.title}}"/>
+            {{content}}
+            <p class="mt-5">
+                <strong>Author:</strong> {{page.author}}
+            </p>

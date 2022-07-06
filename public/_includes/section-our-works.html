@@ -1,0 +1,50 @@
+{% assign t = site.data.translations[include.lang]["section-our-works"] %}
+<section class="bg-light-white" id="our-works">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-8 mx-auto text-center">
+          <h1>{{ t.title }}</h1>
+          <p class="lead mt-3">
+            {{ t.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% assign ordered_works = site.works | sort:"order" | where: "lang", include.lang %}
+  {% for work in ordered_works %}
+  {% assign loopindex = forloop.index | modulo: 2 %}
+  <div class="container">
+    <div class="row d-flex align-items-center mt-5">
+      {% if loopindex == 1 %}
+      <div class="col-10 mx-auto col-md-5 order-1 order-md-0">
+        <div class="row">
+          <div class="col-10 mt-5">
+            <h3>{{work.title}}</h3>
+            <p class="mb-4">{{work.description}}</p>
+            <a class="work-link" href="{{work.link}}">{{work.linkText}}</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 mx-auto offset-md-1 col-md-6 d-flex justify-content-end order-0 order-md-1">
+        <img src="{{work.image | prepend: site.baseurl}}" class="img-fluid" alt="">
+      </div>
+      {% else %}
+      <div class="col-10 mx-auto col-md-5">
+        <img src="{{work.image | prepend: site.baseurl}}" class="img-fluid" alt="">
+      </div>
+      <div class="col-10 mx-auto offset-md-1 col-md-6 d-flex justify-content-end">
+        <div class="row">
+          <div class="col-10 mt-5 mt-md-0">
+            <h3>{{work.title}}</h3>
+            <p class="mb-4">{{work.description}}</p>
+            <a class="work-link" href="{{work.link | prepend: site.baseurl}}">{{work.linkText}}</a>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</section>

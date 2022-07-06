@@ -1,0 +1,48 @@
+
+.round-btn {
+    font-size: 14pt;
+    padding: 18px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 22px;
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    letter-spacing: 1.1px;
+    white-space: nowrap;
+    &.white {
+        background-color: $white;
+        color: $primary-orange;
+        &:hover {
+            //todo: tobe defined
+            transition: all 0.4s ease;
+            color: black;
+        }
+    }
+    &.orange {
+        background-color: $primary-orange;
+        color: $white;
+        &:hover {
+            //todo: tobe defined
+            transition: all 170ms ease;
+            background-color: $orange-darker-background;
+        }
+    }
+    
+
+    &.dark {
+        background-color: #393939;
+        color: $white;
+
+        &:hover {
+            //todo: tobe defined
+            transition: all 0.4s ease;
+            color: $primary-orange;
+        }
+    }
+}
+
+.link-orange {
+    color: $primary-orange !important;
+}

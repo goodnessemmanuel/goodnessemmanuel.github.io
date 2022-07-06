@@ -1,0 +1,41 @@
+#build-together {
+    background: linear-gradient(-45deg, #D98548 1.79%, #FF5B5B 98.21%);
+    color: $white;
+    & h3 {
+        @include font-h3;
+    }
+    & p {
+        margin-top: 14px;
+        @include font-p;
+        & a:link,
+          a:visited{
+            color: rgb(255, 255, 255);
+        }
+        & a:hover,
+          a:active{
+            color: rgba(255, 255, 255, 0.85);
+        }
+    }
+    
+    .build-together-content{
+        padding-top: 2rem;
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: auto auto;
+        @include devices(tablet){
+            grid-template-columns: auto;
+            justify-items: start;
+            row-gap: 3rem;
+            .build-together--btn-project{
+                grid-row: 2/3;
+            }
+            .build-together--hiring{
+                padding-top: 3rem;
+            }
+
+        }
+        @include devices(mobile){
+            padding: 0 3rem;
+        }
+    }
+}

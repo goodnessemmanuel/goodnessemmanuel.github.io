@@ -1,0 +1,54 @@
+---
+---
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import "main";
+
+html, body {
+    min-height: 100%;
+    height: 100%;
+}
+
+section {
+    padding: 140px 0px;
+    & h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 59px;
+
+        /* identical to box height */
+        text-align: center;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    &.lead {
+        color: #818181;
+    }
+
+    @include devices(medium_screen) {
+        padding: 120px 0;
+    }
+
+    @include devices(tablet){
+        padding: 80px 0;
+    }
+}
+
+.bg-white {
+    background-color: $white;
+}
+.bg-light-grey {
+    background-color: #f9f9f9;
+}
+
+.vh-80 { height: 80vh !important; }
+
+.min-vh-80 { min-height: 80vh !important; }
+.min-vh-70 { min-height: 70vh !important; }
+.min-vh-60 { min-height: 60vh !important; }
+.min-vh-50 { min-height: 50vh !important; }

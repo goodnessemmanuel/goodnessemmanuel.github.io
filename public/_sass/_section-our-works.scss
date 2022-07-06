@@ -1,0 +1,23 @@
+#our-works{
+    
+    & h3 {
+        @include font-h3;
+        color: #131313;
+        margin-bottom: 24px
+    }
+
+    & p {
+        @include font-p;
+        color: #393939;
+    }
+    & a.work-link {
+        color: $black;
+        font-size: 18px;
+        padding-right: 80px;
+        background-image: url('../../assets/images/link-arrow.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        text-decoration: none;
+        font-weight: $fw-600;
+    }
+}

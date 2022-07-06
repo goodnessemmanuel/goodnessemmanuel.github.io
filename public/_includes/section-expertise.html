@@ -1,0 +1,38 @@
+{% assign t = site.data.translations[include.lang]["section-fields-of-expertise"] %}
+<section class="bg-white" id="our-services">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-10 mx-auto text-center">
+        <h1>{{ t.title }}</h1>
+        <p class="lead py-4">
+          {{ t.description }}
+        </p>
+        {% if include.lang == "en" %}
+        <a href="{{t.learn-more-url}}" class="round-btn orange">{{t.learn-more}}</a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 mt-5">
+        <div class="row mx-auto">
+          {% assign ordered_expertise = site.expertise | sort:"order" | where: "lang", include.lang %}
+          {% for expertise in ordered_expertise %}
+          <div class="col-2 col-xs-2 col-md-1 text-center mt-5">
+            <div class="hexagon-icon">
+              <img src="{{expertise.icon | prepend: site.baseurl}}" alt="Hexad - Our expertise"/>
+            </div>
+          </div>
+          <div class="col-10 col-xs-10 col-md-5 mt-5">
+            <div class="expertise-item pe-0 pe-md-5 me-0 me-md-5">
+              <h2>
+                {{ t[expertise.title] }}
+              </h2>
+              <p>{{ t[expertise.description] }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

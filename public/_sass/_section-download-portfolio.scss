@@ -1,0 +1,29 @@
+$background-color-primary: #D98548;
+$background-color-secondary: #FF5B5B;
+
+#download-portfolio {
+    background: linear-gradient(45deg, $background-color-primary 1.79%, $background-color-secondary 98.21%);
+    color: $white;
+    & .download-portfolio-bg {
+        background-image: url('../images/build-portfolio.png');
+        background-position: right center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    & h1 {
+        color: $white;
+        font-weight: bold;
+        font-style: normal;
+        font-size:  60px;
+    } 
+
+    & .lead {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    & a:hover {
+        color: black;
+    }
+    
+}

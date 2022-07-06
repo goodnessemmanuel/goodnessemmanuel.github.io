@@ -1,0 +1,66 @@
+{% assign t = site.data.translations[include.lang]["section-who-we-are"] %}
+<section class="bg-light-grey" id="who-we-are">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-8 mx-auto text-center">
+          <h1>{{ t.title }}</h1>
+          <p class="lead py-4">
+            {{ t.description }}
+          </p>
+          {% if include.lang == "en" %}
+          <a href="{{t.learn-more-url}}" class="round-btn orange">{{t.learn-more}}</a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="row mt-5 pt-5">
+        <div class="col-md-12 col-lg-6">
+          <img
+              width="100%"
+              src="{{'/assets/images/who-we-are.png' | prepend: site.baseurl }}"
+          />
+        </div>
+        <div class="col-md-12 col-lg-6 px-5">
+          <div class="row mt-5 mt-xs-0">
+            <div class="col">
+              <div class="who-we-are-item">
+                <h3>{{ t.designers-devs.title }}</h3>
+                <p>{{ t.designers-devs.description }}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="who-we-are-item">
+                <h3>{{ t.providing-services.title }}</h3>
+                <p>{{ t.providing-services.description }}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="who-we-are-item">
+                <h3>{{ t.helping-companies.title }}</h3>
+                <p>{{ t.helping-companies.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 pt-5">
+        <div class="col-10 offset-1 text-center">
+          <h1>{{ t.what-we-sand-for.title }}</h1>
+          <p class="mt-5 fst-italic">{{ t.what-we-sand-for.description }}</p>
+          <ul class="text-start px-5">
+            <li>{{ t.innovative }}</li>
+            <li>{{ t.human-centric }}</li>
+            <li>{{ t.diversity }}</li>
+            <li>{{ t.agile }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

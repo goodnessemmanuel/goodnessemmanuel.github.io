@@ -1,0 +1,20 @@
+{% assign t = site.data.translations[include.lang]["section-download-portfolio"] %}
+<div class="container-fluid p-0 m-0" id="download-portfolio">
+  <div class="download-portfolio-bg min-vh-100 d-flex flex-column justify-content-center">
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto mx-sm-0 col-11 col-lg-7">
+          <h1>{{ t.title }}</h1>
+          <p class="lead mb-5 mt-4">
+            {{ t.description }}
+          </p>
+        </div>
+        <div class="row">
+          <div class="mx-auto mx-sm-0 col-11 col-lg-7 mt-4">
+            <a href="{{ site.baseurl| append: '/' | append: page.lang | append: '/#our-works' }}" class="round-btn white">{{ t.button-text }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+{% assign t = site.data.translations[include.lang]["section-clients"] %}
+<section class="bg-light-grey" id="our-clients">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1>{{ t.title }}</h1>
+        <p class="lead mt-3">
+            {{ t.description }}
+        </p>
+      </div>
+    </div>
+    <div class="row mt-5 pt-5">
+      {% assign ordered_clients = site.clients | sort:"order" %}
+      {% for client in ordered_clients %}
+      <div class="col-md-3 col-6 p-2 p-md-1">
+        <div class="client-wrapper text-center d-flex align-items-center justify-content-center">
+          <img src="{{ client.image | prepend: site.baseurl }}" alt="{{ client.name }}" class="img-fluid p-1"/>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

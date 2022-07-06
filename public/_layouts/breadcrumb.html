@@ -1,0 +1,9 @@
+---
+layout: breadcrumb
+---
+
+<nav aria-label="breadcrumb">
+  {% for item in page.breadcrumb %}
+  <span>{{item.name}}</span>
+  {% endfor %}
+</nav>

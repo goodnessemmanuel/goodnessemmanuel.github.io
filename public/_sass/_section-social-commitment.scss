@@ -1,0 +1,11 @@
+#social-commitment {
+    background-color: #EBEBEB;
+    & .card{
+        border: none;
+        margin: 40px;
+        background-color: transparent !important;
+        & .card-body {
+            padding: 40px 0px;
+        }
+    }
+}

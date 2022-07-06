@@ -1,0 +1,32 @@
+// Required bootstrap functions
+@import "../node_modules/bootstrap/scss/functions";
+@import "typography";
+
+// 2. Include any default variable overrides here
+@import "custom-variables";
+
+// Required bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+//fs-dev helper
+@import "helpers";
+
+// custom styles
+@import "buttons";
+@import "section-main";
+@import "section-download-portfolio";
+@import "section-navbar";
+@import "section-who-we-are";
+@import "section-expertise";
+@import "section-clients";
+@import "section-our-works";
+@import "section-social-commitment";
+@import "section-build-together";
+@import "footer";
+
+body {
+    overflow-x: hidden;
+}

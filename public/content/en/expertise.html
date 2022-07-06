@@ -1,0 +1,28 @@
+---
+layout: inner-breadcrumb
+title: "Fields of Expertise"
+lang-key: en-US
+lang: en
+permalink: en/expertise
+breadcrumb:
+  - name: Home
+    url: /en/
+---
+
+    <h1 class="display-1">{{ page.title }}</h1>
+    <div class="row mx-auto">
+      {% assign ordered_expertise = site.expertisecontent | where: "lang", page.lang %}
+      {% for expertise in ordered_expertise %}
+      <div class="col-12 col-md-4 mt-5">
+        <div class="card h-100 shadow-sm border-0">
+          <a href="{{expertise.url | prepend: site.baseurl }}" class="card-link">
+            <img src="{{expertise.image | prepend: site.baseurl }}" class="card-img-top img-fluid" alt="...">
+            <div class="card-body p-4">
+              <h5 class="card-title">{{expertise.title}}</h5>
+              <p class="card-text">{{expertise.text-preview}}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>

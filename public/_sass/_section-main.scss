@@ -1,0 +1,45 @@
+$background-color-primary: #D98548;
+$background-color-secondary: #FF5B5B;
+
+#main {
+    background: linear-gradient(45deg, $background-color-primary 1.79%, $background-color-secondary 98.21%);
+    color: $white;
+    & .hexagon-bg {
+        background-image: url('../images/main-hexagon.png');
+        background-position: right center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+    }
+    & h1 {
+        color: $white;
+        font-weight: bold;
+        font-style: normal;
+        font-size:  60px;
+
+        @include devices(tablet){
+            font-size: 48px;
+        }
+        @include devices(mobile){
+            font-size: 32px;
+        }
+    } 
+
+    & .lead {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+
+        @include devices(tablet){
+            font-size: 22px;
+        }
+
+        @include devices(mobile){
+            font-size: 18px;
+        }
+    }
+    & a:hover {
+        color: black;
+    }
+    
+}

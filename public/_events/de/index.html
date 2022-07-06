@@ -1,0 +1,36 @@
+---
+layout: inner
+visibleInIntex: "false"
+lang: de
+permalink: /de/events/
+---
+
+<div class="row">
+  <div class="col-10 mx-auto">
+    <div class="py-5">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{{site.baseurl}}">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Events</li>
+        </ol>
+      </nav>
+      <h1 class="display-3 mb-5">Hexad Events</h1>
+      {% assign visible_content = site.events | where: "lang", "de" | where: "visibleInIntex", "true" %}
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        {% for item in visible_content %}
+        <div class="col p-4">
+          <div class="card m-2 h-100">
+            <img src="{{item.image | prepend: site.baseurl }}" class="card-img-top" alt="{{item.title | prepend: 'Image of '}}">
+            <div class="card-body">
+              <small class="text-muted">{{item.eventDate}}</small>
+              <h5 class="card-title mt-2 fw-bold">{{item.title}}</h5>
+              <p class="card-text">{{item.description}}</p>
+              <a href="{{ item.url | prepend: site.baseurl }}">Read More</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

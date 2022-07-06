@@ -1,0 +1,24 @@
+---
+layout: default
+addCustomJs: false
+navbarClasses: 'navbar-inner'
+---
+<div class="container">
+  <div class="col-11 col-md-8 mx-auto mt-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        {% for item in page.breadcrumb %}
+        <li class="breadcrumb-item">
+          <a href="{{ item.url }}" class="link-orange">
+            {{item.name}}
+          </a>
+        </li>
+        {% endfor %}
+        <li class="breadcrumb-item active" aria-current="page">{{page.title}}</li>
+      </ol>
+    </nav>
+  </div>
+  <div class="col-11 col-md-8 mx-auto mt-5 mb-5 pb-5">
+  {{ content }}
+  </div>
+</div>

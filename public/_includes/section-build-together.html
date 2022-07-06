@@ -1,0 +1,27 @@
+{% assign t = site.data.translations[include.lang]["section-build-together"] %}
+{% assign c = site.data.variables["contact"] %}
+
+<section class="bg-light-grey" id="build-together">
+    <div class="container">
+            <div class="text-center mb-5">
+                <h1>{{ t.title }}</h1>
+            </div>
+            <div class="build-together-content">
+                <div class="build-together--project">
+                    <h3>{{ t.have-a-project.title }}</h3>
+                    {{ t.have-a-project.description }}    
+                </div>   
+                <div class="build-together--hiring">
+                    <h3>{{ t.we-are-hiring.title }}</h3>
+                    <p>{{ t.we-are-hiring.description }}</p>
+                </div>
+                <div class="build-together--btn-project">
+                    <a href="{{ c.email }}" target="_blank" class="round-btn white">{{ t.have-a-project.button-text }}</a>
+                </div>
+                <div class="build-together--btn-hiring">
+                    <!-- TODO: external link icon -->
+                    <a class="round-btn white" href="{{ c.linkedin }}" target="_blank">{{ t.we-are-hiring.button-text }}</a>
+                </div>
+            </div>
+    </div>
+</section>

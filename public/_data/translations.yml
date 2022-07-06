@@ -1,0 +1,241 @@
+en:
+  navbar:
+    lang-name: English
+    lang-url: "en/"
+    items:
+      - title: "Who We Are"
+        href: "/en/#who-we-are"
+        is-button: false
+      - title: "Our Services"
+        href: "/en/#our-services"
+        is-button: false
+      - title: "Our Clients"
+        href: "/en/#our-clients"
+        is-button: false
+      - title: "Our Works"
+        href: "/en/#our-works"
+        is-button: false
+      - title: "Career"
+        href: "/en/career.html"
+        is-button: false
+      - title: "Get In Touch"
+        href: "/en/#build-together"
+        is-button: true
+    other-languages:
+      - name: Deutsch
+        lang-url: "/de/"
+  #eof-navbar
+
+  section-main:
+    title: We help you build easy-to-use digital products.
+    description: We support companies from the definition of requirements to implementation and handover.
+    button-text: Get in touch
+  #eof-section-main
+
+  section-download-portfolio:
+    title: We are about to build a portfolio for you.
+    description: Please give us some time to create a portfolio that you can download.
+    button-text: Go Back
+  #eof-download-portfolio
+
+  section-who-we-are:
+    title: Who We Are
+    description: We are a team of specialists who understands your business. We help with the strategy, design, and development.
+    learn-more: Learn More
+    learn-more-url: /en/who-we-are/
+    designers-devs:
+      title: Designers, Devs and Product Managers
+      description: We work in balanced teams to fulfill customer desirability, business viability and technology feasibility. We value team collaboration and quick feedback to better deliver the solution.
+    providing-services:
+      title: Providing services world-wide
+      description: Our teams are situated at various locations worldwide, closer to our customers in Wolfsburg, Berlin, Hanover, Frankfurt, Barcelona and Bengalore.
+    helping-companies:
+      title: Helping companies over a decade
+      description: For the past 10+ years, we are helping organizations create innovative and sustainable digital products.
+    what-we-sand-for:
+      title: This is what we stand for
+      description: “We deliver products and technology for companies and people because we believe that solving the challenges of our clients will ultimately help humanity.”
+    innovative: Innovative
+    human-centric: Human-centric
+    diversity: Diversity
+    agile: Agile
+  #eof-section-who-we-are
+
+  section-fields-of-expertise:
+    title: Our Fields of Expertise
+    description: Our team finds the simplest solutions to the most complex problems with in-depth knowledge and the enthusiasm using the cutting edge of technology
+    learn-more: Learn More
+    learn-more-url: /en/expertise.html
+    develop-with-high-standards-title: Develop with high standards
+    develop-with-high-standards-description: Product development emphasises on delivering the complete process from the concept to reaching the market following agile and lean methods.
+    strategy-is-safe-title: Your strategy is safe with us
+    strategy-is-safe-description: Digital strategy focused on using technology to improve business and brand performance, whether that means creating new products or reimagining current processes.
+    easy-to-use-products-title: We design easy-to-use digital products
+    easy-to-use-products-description: Product design is the defining factor for creating world class products, by combining human-centered design with business goals.
+    data-engineering-solutions-title: Data-engineering solutions
+    data-engineering-solutions-description: We are passionate about putting data to work and solving your toughest problems. We show you how to apply data engg. and build production-ready data infrastructure.
+  #eof-section-fields-of-expertise
+
+  section-clients:
+    title: Our Clients and Partners
+    description: With our expertise and skillset, we are helping top companies across the world.
+  #eof-section-clients
+
+  section-our-works:
+    title: Our Works
+    description: Have a look at our past projects and our product- Mesh Platform.
+  #eof-section-our-works
+
+  section-social-commitment:
+    title: Our Social Commitment
+    description: Hexad feel responsible of supporting local communities. We are involved in charity, and promoting sport events.
+  #eof-section-social-commitment
+
+  section-build-together:
+    title: Let us build something <br/>great, together!
+    have-a-project:
+      title: Have A Project
+      description: "<p>Need help with a current or upcoming project?</p> <p>Reach out to our Sales team today: <a href='mailto:sales@hexad.de' class='email-link'>sales@hexad.de</a></p>"
+      button-text: E-Mail Us
+    we-are-hiring:
+      title: We're Hiring!
+      description: "Find your next challenge at <br/>Hexad. We are a team of creative <br/>people building ideas into <br/>products, services and businesses. <br/>Email: <a  href='mailto:recruitment@hexad.de' class='email-link'>recruitment@hexad.de</a>"
+      button-text: See open positions
+  #eof-section-social-commitment
+
+  footer:
+    about-us: About Us
+    our-experience: Our Experience
+    clients-and-partners: Clients and Partners
+    our-work: Our Work
+    contact: Contact
+    get-in-touch: Get in touch
+    career-at-hexad: Career at Hexad
+    our-locasions: Our Locations
+    social: Social
+    copyright: All rights reserved
+    legal-notice: Legal Notice
+    privacy-policy: Privacy Policy
+    cookie-policy: Cookie Policy
+    compliance: Compliance
+  #eof-footer
+
+de:
+  navbar:
+    lang-name: Deutsch
+    lang-url: "de/"
+    items:
+      - title: "Wer wir sind"
+        href: "/de/#who-we-are"
+        is-button: false
+      - title: "Unsere Dienstleistungen"
+        href: "/de/#our-services"
+        is-button: false
+      - title: "Unsere Kunden"
+        href: "/de/#our-clients"
+        is-button: false
+      - title: "Unsere Arbeiten"
+        href: "/de/#our-works"
+        is-button: false
+      - title: "Kontakt"
+        href: "/de/#build-together"
+        is-button: true
+    other-languages:
+      - name: English
+        lang-url: "/en/"
+  #eof-navbar
+
+  section-main:
+    title: Wir helfen Ihnen, benutzerfreundliche digitale Produkte zu erstellen.
+    description: Wir unterstützen Unternehmen von der Anforderungsdefinition bis hin zur Umsetzung und Übergabe.
+    button-text: Kontakt
+  #eof-section-main
+
+  section-download-portfolio:
+    title: Wir erstellen gerade ein Portfolio für Sie.
+    description: Geben Sie uns bitte noch etwas Zeit, um ein Portfolio für Sie zum Dowload zu erstellen.
+    button-text: Zurück
+  #eof-section-download-portfolio
+
+  section-who-we-are:
+    title: Wer wir sind
+    description: Wir sind ein Team von Spezialisten, das Ihr Geschäft versteht. Wir helfen bei Strategie, Design und Entwicklung.
+    learn-more: Mehr erfahren
+    learn-more-url: /de/wer-wir-sind/
+    designers-devs:
+      title: Designer, Entwickler und Produktmanager
+      description: Wir arbeiten in ausgewogenen Teams, um Kundenwünsche, Wirtschaftlichkeit und technologische Machbarkeit zu erfüllen. Wir schätzen die Zusammenarbeit im Team und schnelles Feedback, um die Lösung besser zu liefern.
+    providing-services:
+      title: Bereitstellung von Dienstleistungen weltweit
+      description: Unsere Teams befinden sich weltweit stets in Kundennähe an den verschiedenen Standorten in Wolfsburg, Berlin, Hannover, Frankfurt, Barcelona und Bangalore.
+    helping-companies:
+      title: Unterstützung von Unternehmen über ein Jahrzehnt
+      description: Seit über 10 Jahren unterstützen wir Unternehmen bei der Entwicklung innovativer und nachhaltiger digitaler Produkte.
+    what-we-sand-for:
+      title: Dafür stehen wir
+      description: „Wir liefern Produkte und Technologien für Unternehmen und Menschen, weil wir glauben, dass die Lösung der Herausforderungen unserer Kunden letztendlich der Menschheit helfen wird.“
+    innovative: Innovativ
+    human-centric: Menschenzentriert
+    diversity: Diversität
+    agile: Agile
+  #eof-section-who-we-are
+
+  section-fields-of-expertise:
+    title: Unsere Fachgebiete
+    description: Unser Team findet die einfachsten Lösungen für komplexe Probleme mittels fundiertem Wissen und Begeisterung, um auf dem neuesten Stand der Technik zu bleiben.
+    learn-more: Mehr erfahren
+    learn-more-url: /de/expertise.html
+    develop-with-high-standards-title: Development mit höchsten Standards
+    develop-with-high-standards-description: Wir entwickeln Produkte indem wir den gesamten Entwicklungsprozess abdecken, vom Konzept bis zur Marktreife, mit agilen und schlanken Methoden.
+    strategy-is-safe-title: Ihr Strategie ist bei uns in guten Händen
+    strategy-is-safe-description: Die digitale Strategie konzentriert sich auf den Technologieeinsatz zur Verbesserung der Geschäfts- und Markenleistung, durch die Entwicklung neuer Produkte oder Neugestaltung bestehender Prozesse.
+    easy-to-use-products-title: Einfach zu bedienende digitale Produkte
+    easy-to-use-products-description: Produktdesign ist ein entscheid-ender Faktor für die Entwicklung von erstklassigen Produkten. Wir  beürcksichtigen Bedürfnisse, Bedenken und Frustrationen der Nutzer und verbinden diese mit Ihren Geschäftszielen.
+    data-engineering-solutions-title: Data-Engineering Lösungen
+    data-engineering-solutions-description: Wir setzen uns mit Leidenschaft für die Umsetzung von Daten und die Lösung Ihrer schwierigsten Probleme ein. Wir bringen Ihnen nahe, wie Sie Data Engineering anwenden die produktionsbereite Dateninfrastruktur aufbauen können.
+
+  #eof-section-fields-of-expertise
+
+  section-clients:
+    title: Unsere Kunden und Partner
+    description: Mit unserem Know-how und unseren Fähigkeiten helfen wir Top-Unternehmen auf der ganzen Welt.
+  #eof-section-clients
+
+  section-our-works:
+    title: Unsere Arbeiten
+    description: Werfen Sie einen Blick auf unsere vergangenen Projekte und unser Produkt - Mesh Platform.
+  #eof-section-our-works
+
+  section-social-commitment:
+    title: Unser soziales Engagement
+    description: Hexad fühlt sich für die Unterstützung der lokalen Gemeinschaften verantwortlich. Wir engagieren uns für wohltätige Zwecke und fördern Sportveranstaltungen.
+  #eof-section-social-commitment
+
+  section-build-together:
+    title: Lassen Sie uns gemeinsam etwas <br/>Großartiges bauen!
+    have-a-project:
+      title: Habe Sie ein Projekt?
+      description: "<p>Brauchen Sie Hilfe bei einem aktuellen oder anstehenden Projekt?</p> <p>Kontaktieren Sie unser Vertriebsteam noch heute: <a href='mailto:sales@hexad.de' class='email-link'>sales@hexad.de</a></p>"
+      button-text: Kontakt
+    we-are-hiring:
+      title: Wir stellen ein!
+      description: "Finden Sie Ihre nächste Herausforderung bei <br/>Hexad. Wir sind ein Team von kreativen <br/>Menschen, die Ideen für <br/>Produkte, Dienstleistungen und Unternehmen entwickeln. <br/>E-Mail: <a  href='mailto:recruitment@hexad.de' class='email-link'>recruitment@hexad.de</a>"
+      button-text: Offene Stellen
+  #eof-section-social-commitment
+
+  footer:
+    about-us: Über uns
+    our-experience: Unsere Erfahrung
+    clients-and-partners: Kunden und Partner
+    our-work: Unsere Arbeit
+    contact: Kontakt
+    get-in-touch: In Kontakt kommen
+    career-at-hexad: Karriere bei Hexad
+    our-locasions: Unsere Standorte
+    social: Social Media
+    copyright: Alle Rechte vorbehalten
+    legal-notice: Impressum
+    privacy-policy: Datenschutz-Bestimmungen
+    cookie-policy: Cookie-Richtlinie
+    compliance: Einhaltung
+  #eof-footer

@@ -1,0 +1,10 @@
+{
+  "name": "hexad-web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "hi@ferdiosnmezay.com , latin.yordanov@hexad.de",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.1.0"
+  }
+}

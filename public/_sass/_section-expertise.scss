@@ -1,0 +1,38 @@
+#our-services {
+    & h1 {
+        color: #101010;
+    }
+    
+    & .expertise-item {
+        & h2 {
+            color: #000;
+            line-height: 36px;
+            font-size: 28px;
+            font-weight: 500;
+            background-position: left center;
+            background-repeat: no-repeat;
+        }
+        p {
+            color: #413D45;
+        }
+    }
+
+    .hexagon-icon {
+        width: 55px;
+        height: 61px;
+        background-image: url("../images/orange-hexagon-expertise.png");
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+.card-link {
+    text-decoration: none !important;
+    color: inherit;
+    &:hover {
+      color: $primary-orange;
+    }
+}

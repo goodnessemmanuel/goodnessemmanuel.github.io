@@ -1,0 +1,16 @@
+---
+lang: en
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang-key | default: "en-US" }}">
+  {% include head.html %}
+  <body>
+    <div id="top"></div>
+    {% include section-navbar.html navbarClasses=layout.navbarClasses lang=page.lang %}
+    {{ content }}
+    
+    {% include footer.html  lang=page.lang%}
+
+{% include scripts.html addCustomJs=layout.addCustomJs %}
+  </body>
+</html>

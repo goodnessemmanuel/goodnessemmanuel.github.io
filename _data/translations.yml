@@ -109,7 +109,7 @@ en:
     clients-and-partners: Clients and Partners
     our-work: Our Work
     contact: Contact
-    get-in-touch: Get in touch
+    get-in-touch: In Kontakt treten
     career-at-hexad: Career at Hexad
     our-locasions: Our Locations
     social: Social
@@ -148,7 +148,7 @@ de:
   section-main:
     title: Wir helfen Ihnen, benutzerfreundliche digitale Produkte zu erstellen.
     description: Wir unterstützen Unternehmen von der Anforderungsdefinition bis hin zur Umsetzung und Übergabe.
-    button-text: Kontakt
+    button-text: &getInTouch In Kontakt treten
   #eof-section-main
 
   section-download-portfolio:
@@ -164,7 +164,7 @@ de:
     learn-more-url: /de/wer-wir-sind/
     designers-devs:
       title: Designer, Entwickler und Produktmanager
-      description: Wir arbeiten in ausgewogenen Teams, um Kundenwünsche, Wirtschaftlichkeit und technologische Machbarkeit zu erfüllen. Wir schätzen die Zusammenarbeit im Team und schnelles Feedback, um die Lösung besser zu liefern.
+      description: Wir arbeiten in ausgewogenen Teams, um Kundenwünsche, Wirtschaftlichkeit und technologische Machbarkeit zu erfüllen. Wir arbeiten in agilen Teams, um schnelles Feedback zu generieren, und somit die besten Lösungen zu liefern.
     providing-services:
       title: Bereitstellung von Dienstleistungen weltweit
       description: Unsere Teams befinden sich weltweit stets in Kundennähe an den verschiedenen Standorten in Wolfsburg, Berlin, Hannover, Frankfurt, Barcelona und Bangalore.
@@ -176,7 +176,7 @@ de:
       description: „Wir liefern Produkte und Technologien für Unternehmen und Menschen, weil wir glauben, dass die Lösung der Herausforderungen unserer Kunden letztendlich der Menschheit helfen wird.“
     innovative: Innovativ
     human-centric: Menschenzentriert
-    diversity: Diversität
+    diversity: Divers
     agile: Agile
   #eof-section-who-we-are
 
@@ -188,11 +188,11 @@ de:
     develop-with-high-standards-title: Development mit höchsten Standards
     develop-with-high-standards-description: Wir entwickeln Produkte indem wir den gesamten Entwicklungsprozess abdecken, vom Konzept bis zur Marktreife, mit agilen und schlanken Methoden.
     strategy-is-safe-title: Ihr Strategie ist bei uns in guten Händen
-    strategy-is-safe-description: Die digitale Strategie konzentriert sich auf den Technologieeinsatz zur Verbesserung der Geschäfts- und Markenleistung, durch die Entwicklung neuer Produkte oder Neugestaltung bestehender Prozesse.
+    strategy-is-safe-description: Unsere digitale Strategie konzentriert sich auf den Technologieeinsatz zur Verbesserung der Geschäfts- und Markenleistung, durch die Entwicklung neuer Produkte oder Neugestaltung bestehender Prozesse.
     easy-to-use-products-title: Einfach zu bedienende digitale Produkte
     easy-to-use-products-description: Produktdesign ist ein entscheid-ender Faktor für die Entwicklung von erstklassigen Produkten. Wir  beürcksichtigen Bedürfnisse, Bedenken und Frustrationen der Nutzer und verbinden diese mit Ihren Geschäftszielen.
     data-engineering-solutions-title: Data-Engineering Lösungen
-    data-engineering-solutions-description: Wir setzen uns mit Leidenschaft für die Umsetzung von Daten und die Lösung Ihrer schwierigsten Probleme ein. Wir bringen Ihnen nahe, wie Sie Data Engineering anwenden die produktionsbereite Dateninfrastruktur aufbauen können.
+    data-engineering-solutions-description: Wir setzen uns mit Leidenschaft für die Umsetzung von Daten und die Lösung Ihrer schwierigsten Probleme ein. Wir bringen Ihnen nahe, wie Sie Data-Engineering anwenden und die produktionsbereite Dateninfrastruktur aufbauen können.
 
   #eof-section-fields-of-expertise
 
@@ -229,7 +229,7 @@ de:
     clients-and-partners: Kunden und Partner
     our-work: Unsere Arbeit
     contact: Kontakt
-    get-in-touch: In Kontakt kommen
+    get-in-touch: *getInTouch
     career-at-hexad: Karriere bei Hexad
     our-locasions: Unsere Standorte
     social: Social Media

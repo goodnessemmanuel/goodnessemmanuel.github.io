@@ -1,82 +1,104 @@
-{% assign t = site.data.translations[include.lang]["footer"] %}
-{% assign navbar = site.data.translations[include.lang]["navbar"] %}
-{% assign hrefPrefix = site.baseurl | append: '/' %}
-{% assign linkClass = '' %} 
-
-{% if page.url == "/" %} 
-  {% assign hrefPrefix = '' %}
-  {% assign linkClass = 'page-scroll' %} 
-{% endif%}
+{% assign t = site.data.translations[include.lang]["footer"] %} {% assign navbar
+= site.data.translations[include.lang]["navbar"] %} {% assign hrefPrefix =
+site.baseurl | append: '/' %} {% assign linkClass = '' %} {% if page.url == "/"
+%} {% assign hrefPrefix = '' %} {% assign linkClass = 'page-scroll' %} {%
+endif%}
 
 <footer>
-    <div class="container-fluid footer dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="row">
-                        <div class="col-sm-3 col-10 mx-auto mb-5 mb-sm-0">
-                            <img width="120" src="/assets/images/hexad-logo-white.png" />
-                        </div>
-                        <div class="col">
-                            <div class="row">
-                                <div class="col-10 col-md mx-auto mt-5 mt-md-0">
-                                    <ul>
-                                        <li class="section-head">{{ t.about-us }}</li>
-                                        {% assign navlink = navbar.items | where: "is-button", "false"  %} 
-                                        {% for nav in navlink %}
-                                        <li>
-                                        <a class="{{ linkClass }}" href="{{ nav.href }}">{{nav.title}}</a>
-                                      </li>
-                                      {% endfor %}
-
-
-                                        <li><a href="{{'/blog' | prepend: site.url}}">Blog</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-10 col-md mx-auto mt-5 mt-md-0">
-                                    <ul>
-                                        <li class="section-head">{{ t.contact }}</li>
-                                        <li><a href="mailto:contact@hexad.de" target="_blank"> {{t.get-in-touch }}</a></li>
-                                        <li><a href="/en/career.html">{{ t.career-at-hexad }}</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-10 col-md mx-auto mt-5 mt-md-0">
-                                    <ul>
-                                        <li class="section-head">{{ t.our-locasions }}</li>
-                                        <li>Wolfsburg</li>
-                                        <li>Berlin</li>
-                                        <li>Frankfurt</li>
-                                        <li>Hannover</li>
-                                        <li>Barcelona</li>
-                                        <li>Bangalore</li>
-                                    </ul>
-                                </div>
-                                <div class="col-10 col-md mx-auto mt-5 mt-md-0">
-                                    <ul>
-                                        <li class="section-head">{{ t.social }}</li>
-                                        <li><a href="https://www.linkedin.com/company/hexad-gmbh/mycompany/" target="_blank">LinkedIn</a></li>
-                                        <li><a href="https://www.instagram.com/hexad_GmbH/" target="_blank">Instagram</a></li>
-                                        <li><a href="https://www.facebook.com/HexadGmbH" target="_blank">Facebook</a></li>
-                                        <li><a href="mailto:info@hexad.de" target="_blank">E-mail</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-5 pt-5">
-                        <div class="col text-center footnote">
-                            <p>© 2022 - HEXAD GMBH | {{ t.copyright }}</p>
-                            <ul class="list-inline">
-                                <li><a href="/de/legal-notice" >{{ t.legal-notice }}</a></li>
-                                <li><a href="/de/data-privacy" >{{t.privacy-policy }}</a></li>
-                                <li><a href="/en/cookie-policy" >{{ t.cookie-policy }}</a></li>
-                                <li><a href="/de/compliance" >{{ t.compliance }}</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+  <div class="container-fluid footer dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="row">
+            <div class="col-sm-3 col-10 mx-auto mb-5 mb-sm-0">
+              <a class="{{ linkClass }}" href="#top">
+                <img width="120" src="/assets/images/hexad-logo-white.png" />
+              </a>
             </div>
+            <div class="col">
+              <div class="row">
+                <div class="col-10 col-md mx-auto mt-5 mt-md-0">
+                  <ul>
+                    <li class="section-head">{{ t.about-us }}</li>
+                    {% assign navlink = navbar.items | where: "is-button",
+                    "false" %} {% for nav in navlink %}
+                    <li>
+                      <a class="{{ linkClass }}" href="{{ nav.href }}"
+                        >{{nav.title}}</a
+                      >
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                <div class="col-10 col-md mx-auto mt-5 mt-md-0">
+                  <ul>
+                    <li class="section-head">{{ t.contact }}</li>
+                    <li>
+                      <a href="mailto:contact@hexad.de" target="_blank">
+                        {{t.get-in-touch }}</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/en/career.html">{{ t.career-at-hexad }}</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-10 col-md mx-auto mt-5 mt-md-0">
+                  <ul>
+                    <li class="section-head">{{ t.our-locasions }}</li>
+                    <li>Wolfsburg</li>
+                    <li>Berlin</li>
+                    <li>Frankfurt</li>
+                    <li>Hannover</li>
+                    <li>Barcelona</li>
+                    <li>Bangalore</li>
+                  </ul>
+                </div>
+                <div class="col-10 col-md mx-auto mt-5 mt-md-0">
+                  <ul>
+                    <li class="section-head">{{ t.social }}</li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/company/hexad-gmbh/mycompany/"
+                        target="_blank"
+                        >LinkedIn</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/hexad_GmbH/"
+                        target="_blank"
+                        >Instagram</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/HexadGmbH"
+                        target="_blank"
+                        >Facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a href="mailto:info@hexad.de" target="_blank">E-mail</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5 pt-5">
+            <div class="col text-center footnote">
+              <p>© 2022 - HEXAD GMBH | {{ t.copyright }}</p>
+              <ul class="list-inline">
+                <li><a href="/de/legal-notice">{{ t.legal-notice }}</a></li>
+                <li><a href="/de/data-privacy">{{t.privacy-policy }}</a></li>
+                <li><a href="/en/cookie-policy">{{ t.cookie-policy }}</a></li>
+                <li><a href="/de/compliance">{{ t.compliance }}</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    
+  </div>
 </footer>

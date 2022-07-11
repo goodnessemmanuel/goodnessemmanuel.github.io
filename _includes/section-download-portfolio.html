@@ -1,17 +1,28 @@
-{% assign t = site.data.translations[include.lang]["section-download-portfolio"] %}
+{% assign t = site.data.translations[include.lang]["section-download-portfolio"]
+%}
 <div class="container-fluid p-0 m-0" id="download-portfolio">
-  <div class="download-portfolio-bg min-vh-100 d-flex flex-column justify-content-center">
+  <div
+    class="download-portfolio-bg min-vh-100 d-flex flex-column justify-content-center"
+  >
     <div class="container">
       <div class="row">
         <div class="mx-auto mx-sm-0 col-11 col-lg-7">
           <h1>{{ t.title }}</h1>
-          <p class="lead mb-5 mt-4">
-            {{ t.description }}
-          </p>
+          <p class="lead mt-4">{{ t.description }}</p>
+          <p class="lead mb-5 mt-4">{{ t.contact-text }}</p>
         </div>
         <div class="row">
           <div class="mx-auto mx-sm-0 col-11 col-lg-7 mt-4">
-            <a href="{{ site.baseurl| append: '/' | append: page.lang | append: '/#our-works' }}" class="round-btn white">{{ t.button-text }}</a>
+            <a
+              href="{{ site.baseurl| append: '/' | append: page.lang | append: '/#our-works' }}"
+              class="round-btn white"
+              ><svg width="21" height="16" viewBox="0 0 21 16">
+                <path
+                  d="M21 8L1.00002 8M1.00002 8L9.20877 15M1.00002 8L7.44976 0.999999"
+                />
+              </svg>
+              {{ t.button-text }}</a
+            >
           </div>
         </div>
       </div>

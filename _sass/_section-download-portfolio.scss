@@ -1,29 +1,57 @@
-$background-color-primary: #D98548;
-$background-color-secondary: #FF5B5B;
+$background-color-primary: #d98548;
+$background-color-secondary: #ff5b5b;
 
 #download-portfolio {
-    background: linear-gradient(45deg, $background-color-primary 1.79%, $background-color-secondary 98.21%);
+  background: linear-gradient(
+    45deg,
+    $background-color-primary 1.79%,
+    $background-color-secondary 98.21%
+  );
+  color: $white;
+  & .download-portfolio-bg {
+    background-image: url("../images/build-portfolio.png");
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  & h1 {
     color: $white;
-    & .download-portfolio-bg {
-        background-image: url('../images/build-portfolio.png');
-        background-position: right center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    & h1 {
-        color: $white;
-        font-weight: bold;
-        font-style: normal;
-        font-size:  60px;
-    } 
+    font-weight: bold;
+    font-style: normal;
+    font-size: 60px;
+  }
 
-    & .lead {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 32px;
+  & .lead {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  & a {
+    & svg {
+      stroke: #ff6415;
+      stroke-width: 2;
+      stroke-linejoin: round;
+      margin-right: 0.8rem;
     }
-    & a:hover {
-        color: black;
+  }
+  & a:hover {
+    color: $black;
+    & svg {
+      stroke: $black !important;
     }
-    
+  }
+  & p {
+    & a.email-link {
+      &:link,
+      &:visited {
+        color: rgb(255, 255, 255);
+      }
+    }
+    & a.email-link {
+      &:hover,
+      &:active {
+        color: rgba(255, 255, 255, 0.85);
+      }
+    }
+  }
 }

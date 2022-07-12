@@ -35,6 +35,7 @@ en:
   section-download-portfolio:
     title: We are about to build a portfolio for you.
     description: Please give us some time to create a portfolio that you can download.
+    contact-text: You can also reach out to our sales team via mail to get a sneak peek. <br><a href='mailto:contact@hexad.de' class='email-link'>sales@hexad.de</a>
     button-text: Go Back
   #eof-download-portfolio
 
@@ -137,7 +138,7 @@ de:
       - title: "Unsere Arbeiten"
         href: "/de/#our-works"
         is-button: false
-      - title: "Kontakt"
+      - title: &getInTouch In Kontakt treten
         href: "/de/#build-together"
         is-button: true
     other-languages:
@@ -148,12 +149,13 @@ de:
   section-main:
     title: Wir helfen Ihnen, benutzerfreundliche digitale Produkte zu erstellen.
     description: Wir unterstützen Unternehmen von der Anforderungsdefinition bis hin zur Umsetzung und Übergabe.
-    button-text: &getInTouch In Kontakt treten
+    button-text: *getInTouch
   #eof-section-main
 
   section-download-portfolio:
     title: Wir erstellen gerade ein Portfolio für Sie.
     description: Geben Sie uns bitte noch etwas Zeit, um ein Portfolio für Sie zum Dowload zu erstellen.
+    contact-text: Wenn Sie nicht erwarten können, wenden Sie sich bitte an unser Verkaufsteam, um einen kleinen Vorgeschmack zu erhalten. <br><a href='mailto:contact@hexad.de' class='email-link'>sales@hexad.de</a>
     button-text: Zurück
   #eof-section-download-portfolio
 

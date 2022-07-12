@@ -6,8 +6,14 @@
 }
 
 @mixin commonNavigationStyle {
+  .dropdown-item{
+      &:active{
+        color: #1e2125;
+        background-color: #e9ecef;
+      }
+  }
+
   @include devices(navbar){
-    //background:#fed9bf;
     background: rgba(255, 225, 203, 0.97);
      .nav--container{
        display: block !important;
@@ -39,6 +45,9 @@
           justify-content: start;
           color: $primary-orange;
           border: 0;
+          font-size: 16px;
+          padding: 0;
+          margin-top: 24px;
           &:link, &:visited,
           &:hover, &:active{
             background: transparent;

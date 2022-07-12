@@ -138,7 +138,7 @@ de:
       - title: "Unsere Arbeiten"
         href: "/de/#our-works"
         is-button: false
-      - title: "Kontakt"
+      - title: &getInTouch In Kontakt treten
         href: "/de/#build-together"
         is-button: true
     other-languages:
@@ -149,7 +149,7 @@ de:
   section-main:
     title: Wir helfen Ihnen, benutzerfreundliche digitale Produkte zu erstellen.
     description: Wir unterstützen Unternehmen von der Anforderungsdefinition bis hin zur Umsetzung und Übergabe.
-    button-text: &getInTouch In Kontakt treten
+    button-text: *getInTouch
   #eof-section-main
 
   section-download-portfolio:

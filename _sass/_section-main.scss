@@ -16,15 +16,21 @@ $background-color-secondary: #FF5B5B;
         font-weight: bold;
         font-style: normal;
         font-size:  60px;
-
-        @include devices(tablet){
-            font-size: 48px;
-        }
-        @include devices(mobile){
-            font-size: 32px;
-        }
     } 
-
+    
+    @include devices(tablet){
+        & h1 {
+            @include font-h1-default;
+        }
+  
+    }
+      
+    @include devices(mobile){
+        & h1 {
+            @include font-h2;
+        }
+  
+    }
     & .lead {
         font-weight: 500;
         font-size: 24px;

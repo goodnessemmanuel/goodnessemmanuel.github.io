@@ -1,5 +1,22 @@
 #our-works{
+    & h1 {
+        @include font-h1-default;
+    }
     
+    @include devices(tablet){
+        & h1 {
+              @include font-h1;
+          }
+  
+      }
+      
+      @include devices(mobile){
+        & h1 {
+              @include font-h2;
+          }
+  
+    }
+
     & h3 {
         @include font-h3;
         color: #131313;

@@ -20,12 +20,29 @@ $background-color-secondary: #ff5b5b;
     font-style: normal;
     font-size: 60px;
   }
+  @include devices(tablet){
+      & h1 {
+          @include font-h1-default;
+      }
+
+  }
+  @include devices(mobile){
+      & h1 {
+          @include font-h2;
+      }
+
+  }
 
   & .lead {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
+    @include font-h4;
   }
+
+  @include devices(mobile){
+    & .lead {
+      @include font-p;
+    }
+  }
+  
   & a {
     & svg {
       stroke: #ff6415;

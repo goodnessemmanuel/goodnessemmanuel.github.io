@@ -1,4 +1,3 @@
-
 $h1: 36;
 $h2: 32;
 $h3: 28;
@@ -16,83 +15,85 @@ $fw-600: 600;
 $bolder: 700;
 
 .rb {
-    border: red 1px solid;
+  border: red 1px solid;
 }
 
 //create font sizes
+@mixin font-h1-default {
+  font-size: ($h1 + 12) + px;
+  line-height: ($h1 + 6) + pt;
+  font-weight: $bold;
+}
+
 @mixin font-h1 {
-    font-size: $h1 + px;
-    line-height: $h1 + pt;
-    font-weight: $bold;
-  }
-  
-  @mixin font-h2 {
-    font-size: $h2 + px;
-    line-height: $h2 + pt;
-    font-weight: $bold;
-  }
-  
-  @mixin font-h3 {
-    font-size: $h3 + px;
-    line-height: $h3 + pt; 
-    font-weight: $bold;
-  }
-  
-  @mixin font-h4 {
-    font-size: $h4 + px;
-    line-height: $h3 + pt; 
-    font-weight: $bold;
+  font-size: $h1 + px;
+  line-height: $h1 + pt;
+  font-weight: $bold;
+}
+
+@mixin font-h2 {
+  font-size: $h2 + px;
+  line-height: $h2 + pt;
+  font-weight: $bold;
+}
+
+@mixin font-h3 {
+  font-size: $h3 + px;
+  line-height: $h3 + pt;
+  font-weight: $bold;
+}
+
+@mixin font-h4 {
+  font-size: $h4 + px;
+  line-height: $h4 + pt;
+  font-weight: $bold;
+}
+
+@mixin font-p {
+  font-size: $paragraph + px;
+}
+
+//create breakpoints
+@mixin devices($breakpoint) {
+  @if $breakpoint == big_screen {
+    @media only screen and (min-width: 1025px) {
+      @content;
+    }
   }
 
-  @mixin font-p {
-    font-size: $paragraph + px;
-  }
-  
-  
-  //create breakpoints
-  @mixin devices ($breakpoint) {
-    
-    @if $breakpoint == big_screen {    
-      @media only screen and (min-width: 1025px) {
-        @content;
-      }
+  @if $breakpoint == medium_screen {
+    @media only screen and (max-width: $bp-1024) {
+      @content;
     }
-  
-    @if $breakpoint == medium_screen {    
-      @media only screen and (max-width: $bp-1024) {
-        @content;
-      }
-    }
-  
-    @if $breakpoint == tablet {    
-      @media only screen and (max-width: $bp-768){
-        @content;
-      }
-    }
-  
-    @if $breakpoint == small_tablet {    
-      @media only screen and (max-width: $bp-680){
-        @content;
-      }
-    }
-   
-    @if $breakpoint == mobile {
-      @media only screen and (max-width: $bp-480) {
-        @content;
-      }
-    }
-
-    @if $breakpoint == navbar or  $breakpoint == bp_991 {
-      @media only screen and (max-width: $bp-991) {
-        @content;
-      }
-    }
-    
   }
 
-  @mixin breakBetweenLowerAndUpperLimit($lower, $upper) {
-    @media only screen and (min-width: $lower) and (max-width: $upper) {
-        @content;
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: $bp-768) {
+      @content;
     }
   }
-  
+
+  @if $breakpoint == small_tablet {
+    @media only screen and (max-width: $bp-680) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: $bp-480) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == navbar or $breakpoint == bp_991 {
+    @media only screen and (max-width: $bp-991) {
+      @content;
+    }
+  }
+}
+
+@mixin breakBetweenLowerAndUpperLimit($lower, $upper) {
+  @media only screen and (min-width: $lower) and (max-width: $upper) {
+    @content;
+  }
+}

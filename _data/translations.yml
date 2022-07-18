@@ -18,7 +18,7 @@ en:
       - title: "Career"
         href: "/en/career.html"
         is-button: false
-      - title: "Get In Touch"
+      - title: &getInTouchEn "Get In Touch"
         href: "/en/#build-together"
         is-button: true
     other-languages:
@@ -29,7 +29,7 @@ en:
   section-main:
     title: We help you build easy-to-use digital products.
     description: We support companies from the definition of requirements to implementation and handover.
-    button-text: Get in touch
+    button-text: *getInTouchEn
   #eof-section-main
 
   section-download-portfolio:
@@ -110,7 +110,7 @@ en:
     clients-and-partners: Clients and Partners
     our-work: Our Work
     contact: Contact
-    get-in-touch: In Kontakt treten
+    get-in-touch: *getInTouchEn
     career-at-hexad: Career at Hexad
     our-locasions: Our Locations
     social: Social
@@ -119,6 +119,7 @@ en:
     privacy-policy: Privacy Policy
     cookie-policy: Cookie Policy
     compliance: Compliance
+    email: Email
   #eof-footer
 
 de:
@@ -138,7 +139,7 @@ de:
       - title: "Unsere Arbeiten"
         href: "/de/#our-works"
         is-button: false
-      - title: &getInTouch In Kontakt treten
+      - title: &getInTouchDe In Kontakt treten
         href: "/de/#build-together"
         is-button: true
     other-languages:
@@ -149,7 +150,7 @@ de:
   section-main:
     title: Wir helfen Ihnen, benutzerfreundliche digitale Produkte zu erstellen.
     description: Wir unterstützen Unternehmen von der Anforderungsdefinition bis hin zur Umsetzung und Übergabe.
-    button-text: *getInTouch
+    button-text: *getInTouchDe
   #eof-section-main
 
   section-download-portfolio:
@@ -231,7 +232,7 @@ de:
     clients-and-partners: Kunden und Partner
     our-work: Unsere Arbeit
     contact: Kontakt
-    get-in-touch: *getInTouch
+    get-in-touch: *getInTouchDe
     career-at-hexad: Karriere bei Hexad
     our-locasions: Unsere Standorte
     social: Social Media
@@ -240,4 +241,5 @@ de:
     privacy-policy: Datenschutz-Bestimmungen
     cookie-policy: Cookie-Richtlinie
     compliance: Einhaltung
+    email: E-Mail
   #eof-footer

@@ -119,6 +119,7 @@ en:
     privacy-policy: Privacy Policy
     cookie-policy: Cookie Policy
     compliance: Compliance
+    email: Email
   #eof-footer
 
 de:
@@ -240,4 +241,5 @@ de:
     privacy-policy: Datenschutz-Bestimmungen
     cookie-policy: Cookie-Richtlinie
     compliance: Einhaltung
+    email: E-Mail
   #eof-footer

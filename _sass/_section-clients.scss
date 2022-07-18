@@ -1,4 +1,21 @@
 #our-clients {
+    & h1 {
+        @include font-h1-default;
+    }
+
+    @include devices(tablet){
+        & h1 {
+              @include font-h1;
+          }
+  
+      }
+      
+      @include devices(mobile){
+        & h1 {
+              @include font-h2;
+          }
+  
+    }
     & .client-wrapper {
        background-color: rgba(196, 196, 196, 0.1);
        border-radius: 10px; 

@@ -1,6 +1,11 @@
 #build-together {
     background: linear-gradient(-45deg, #D98548 1.79%, #FF5B5B 98.21%);
     color: $white;
+    
+    & h1 {
+        @include font-h1-default;
+    }
+
     & h3 {
         @include font-h3;
     }
@@ -35,7 +40,21 @@
 
         }
         @include devices(mobile){
-            padding: 0 3rem;
+            padding: 0 1.5rem;
         }
+    }
+
+    @include devices(tablet){
+      & h1 {
+            @include font-h1;
+        }
+
+    }
+    
+    @include devices(mobile){
+      & h1 {
+            @include font-h2;
+        }
+
     }
 }

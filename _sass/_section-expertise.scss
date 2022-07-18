@@ -1,14 +1,26 @@
 #our-services {
     & h1 {
+        @include font-h1-default;
         color: #101010;
     }
-    
+
+    @include devices(tablet){
+        & h1 {
+              @include font-h1;
+          }
+  
+      }
+      
+      @include devices(mobile){
+        & h1 {
+              @include font-h2;
+          }
+  
+    }
     & .expertise-item {
         & h2 {
+            @include font-h3;
             color: #000;
-            line-height: 36px;
-            font-size: 28px;
-            font-weight: 500;
             background-position: left center;
             background-repeat: no-repeat;
         }
@@ -26,6 +38,14 @@
         justify-content: center;
         align-items: center;
         padding: 20px;
+    }
+
+    @include devices(mobile){
+        & .expertise-item {
+            & h2 {
+                @include font-h4;
+            }
+        }
     }
 }
 

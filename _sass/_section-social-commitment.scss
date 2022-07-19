@@ -28,7 +28,7 @@
         @include font-p;
         color: #393939;
     }
-    
+
     & .card{
         border: none;
         margin: 40px;
@@ -36,5 +36,16 @@
         & .card-body {
             padding: 40px 0px;
         }
+    }
+
+    @include devices(tablet){
+        & .card{
+            margin: 20px;
+            background-color: transparent !important;
+            & .card-body {
+                padding: 20px 0px;
+            }
+        }
+
     }
 }

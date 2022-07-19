@@ -18,41 +18,6 @@ $bolder: 700;
   border: red 1px solid;
 }
 
-//create font sizes
-@mixin font-h1-default {
-  font-size: ($h1 + 12) + px;
-  line-height: ($h1 + 6) + pt;
-  font-weight: $bold;
-}
-
-@mixin font-h1 {
-  font-size: $h1 + px;
-  line-height: $h1 + pt;
-  font-weight: $bold;
-}
-
-@mixin font-h2 {
-  font-size: $h2 + px;
-  line-height: $h2 + pt;
-  font-weight: $bold;
-}
-
-@mixin font-h3 {
-  font-size: $h3 + px;
-  line-height: $h3 + pt;
-  font-weight: $bold;
-}
-
-@mixin font-h4 {
-  font-size: $h4 + px;
-  line-height: $h4 + pt;
-  font-weight: $bold;
-}
-
-@mixin font-p {
-  font-size: $paragraph + px;
-}
-
 //create breakpoints
 @mixin devices($breakpoint) {
   @if $breakpoint == big_screen {
@@ -97,3 +62,50 @@ $bolder: 700;
     @content;
   }
 }
+
+//create font sizes
+@mixin font-h1-default {
+  font-size: ($h1 + 12) + px;
+  line-height: ($h1 + 6) + pt;
+  font-weight: $bold;
+
+  @include devices(tablet){
+    font-weight: $fw-600;
+  }
+}
+
+@mixin font-h1 {
+  font-size: $h1 + px;
+  line-height: $h1 + pt;
+  font-weight: $bold;
+  @include devices(tablet){
+    font-weight: $fw-600;
+  }
+}
+
+@mixin font-h2 {
+  font-size: $h2 + px;
+  line-height: $h2 + pt;
+  font-weight: $bold;
+  @include devices(mobile){
+    font-weight: $fw-600;
+  }
+  
+}
+
+@mixin font-h3 {
+  font-size: $h3 + px;
+  line-height: $h3 + pt;
+  font-weight: $bold;
+}
+
+@mixin font-h4 {
+  font-size: $h4 + px;
+  line-height: $h4 + pt;
+  font-weight: $bold;
+}
+
+@mixin font-p {
+  font-size: $paragraph + px;
+}
+

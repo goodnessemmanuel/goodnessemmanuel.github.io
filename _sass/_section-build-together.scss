@@ -30,7 +30,7 @@
         @include devices(tablet){
             grid-template-columns: auto;
             justify-items: start;
-            row-gap: 3rem;
+            row-gap: 2rem;
             .build-together--btn-project{
                 grid-row: 2/3;
             }
